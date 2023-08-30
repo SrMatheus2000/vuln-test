@@ -1,0 +1,8 @@
+function(val, secret){
+  if ('string' != typeof val) throw new TypeError('cookie required');
+  if ('string' != typeof secret) throw new TypeError('secret required');
+  var str = val.slice(0, val.lastIndexOf('.'))
+    , mac = exports.sign(str, secret);
+  
+  return exports.sign(mac, secret) == exports.sign(val, secret) ? str : false;
+}

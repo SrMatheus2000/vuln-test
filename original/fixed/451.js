@@ -1,0 +1,1 @@
+(elem, property, value) => elem.textContent = value || state[property].value

@@ -1,0 +1,1 @@
+([key, value]) => `<pre><strong>${key}</strong>: ${htmlSafe(value)}</pre>`
