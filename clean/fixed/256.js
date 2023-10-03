@@ -1,1 +1,0 @@
-function f(a){var b=a.currentTarget,c=b.getAttribute("data-vimeo"),d=b.getAttribute("data-vimeoparams")||"";b.removeEventListener("click",f),c&&n.test(c)&&(!d||n.test(d))&&(d&&!m.test(d)&&(d="&"+d),a.preventDefault(),b.innerHTML='<iframe src="'+r.replace(k,c)+d+'" frameborder="0" allowfullscreen="" width="640" height="390"></iframe>')}
